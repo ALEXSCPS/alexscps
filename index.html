@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALEXSCPS - Browse Scenepacks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dark-theme">
+
+    <header>
+        <div class="header-content">
+            <h1 class="logo">ALEX<span class="logo-accent">SCPS</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#" class="active">PACKS</a></li>
+                    <li><a href="#">SOCIALS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="browse-section">
+            <h2 class="section-title">Browse <span class="gradient-text">Scenepacks</span></h2>
+            <p class="section-desc">Tìm chính xác những gì bạn cần với tìm kiếm nhanh, bản xem trước sạch sẽ và tải xuống trực tiếp.</p>
+            
+            <div class="filter-container">
+                <input type="text" id="search-bar" placeholder="Tìm kiếm theo tiêu đề hoặc mô tả...">
+                
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label>SẮP XẾP</label>
+                        <div class="btn-group">
+                            <button class="filter-btn active" data-sort="latest">Mới nhất</button>
+                            <button class="filter-btn" data-sort="az">A-Z</button>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>NGƯỜI TẠO</label>
+                        <div class="btn-group">
+                            <button class="filter-btn active" data-creator="all">Tất cả</button>
+                            <button class="filter-btn" data-creator="alexscps">ALEXSCPS</button>
+                            </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>LOẠI</label>
+                        <div class="btn-group">
+                            <button class="filter-btn active" data-type="all">Tất cả</button>
+                            <button class="filter-btn" data-type="movie">Phim</button>
+                            <button class="filter-btn" data-type="tv">TV Shows</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="showing-count">Đang hiển thị <span id="pack-count">0</span> packs</p>
+            
+            <div id="packs-grid" class="packs-grid">
+                </div>
+        </section>
+    </main>
+
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body-content">
+                <h3 id="modal-title">---</h3>
+                <img id="modal-poster" src="" alt="Poster">
+                <p id="modal-tagline" class="tagline">---</p>
+                <p id="modal-description">---</p>
+                <div class="modal-details">
+                    <div class="detail-item"><label>Loại</label><span id="modal-type">---</span></div>
+                    <div class="detail-item"><label>Phát hành</label><span id="modal-release">---</span></div>
+                    <div class="detail-item"><label>Tình trạng</label><span id="modal-status">---</span></div>
+                    <div class="detail-item"><label>Thời lượng</label><span id="modal-runtime">---</span></div>
+                    <div class="detail-item"><label>Thể loại</label><span id="modal-genres">---</span></div>
+                </div>
+                <div class="modal-actions">
+                    <button class="modal-btn main-action">Download</button>
+                    <button class="modal-btn secondary-action">Copy Link</button>
+                    <button class="modal-btn secondary-action"><i class="fab fa-x-twitter"></i> Share</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col logo-col">
+                <h3 class="logo">ALEX<span class="logo-accent">SCPS</span></h3>
+                <p>Scenepacks chất lượng cao cho chỉnh sửa và sáng tạo nội dung.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Packs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Social Media</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2026 ALEXSCPS. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
