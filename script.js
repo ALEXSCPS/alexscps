@@ -1,5 +1,3 @@
-// --- DỮ LIỆU PACKS MẪU (BẠN SẼ THAY THẾ BẰNG DỮ LIỆU THẬT Ở ĐÂY) ---
-// Thay thế 'link_anh_cua_ban.jpg' bằng tên file ảnh thật bạn tải lên GitHub.
 const packsData = [
     {
         id: 1,
@@ -7,10 +5,9 @@ const packsData = [
         meta: "Alex | TV Show",
         creator: "alexscps",
         type: "tv",
-        poster: "scp_1_poster.jpg", // Tải ảnh 'scp_1_poster.jpg' lên GitHub rồi sửa tên file ở đây
-        // Chi tiết cho modal (giống image_0.png)
-        tagline: "The story of Baltimore's corrupt Gun Trace Task Force.",
-        description: "After a shocking first date, Bea and Ben’s fiery attraction turns ice cold – until they find themselves unexpectedly reunited at a destination wedding in Australia. (Dữ liệu mẫu cho mô tả)",
+        poster: "scp_1_poster.jpg", 
+        tagline: "Top 6 Miss Universe Philippines 2025.",
+        description: "Miss Universe Philippines 2025
         release: "1 thg 4, 2026 (Dữ liệu mẫu)",
         runtime: "1h 43m (Dữ liệu mẫu)",
         genres: "Miss Universe, Miss Universe Philippines 2025 (Dữ liệu mẫu)"
