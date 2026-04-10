@@ -1,0 +1,90 @@
+/* --- BIẾN TOÀN CỤC --- */
+:root {
+    --bg-dark: #121212;
+    --bg-card: #1e1e1e;
+    --bg-modal: #181818;
+    --text-main: #e0e0e0;
+    --text-sub: #b0b0b0;
+    --accent: #bb86fc; /* Màu tím nhấn */
+    --accent-dark: #985eff;
+    --gradient: linear-gradient(135deg, #bb86fc 0%, #03dac6 100%);
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-logo: 'Verdana Bold', sans-serif; /* Tạm dùng Verdana Bold để tạo logo giống hình */
+}
+
+/* --- RESET CƠ BẢN --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-main); background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+a { text-decoration: none; color: inherit; transition: color 0.3s; }
+ul { list-style: none; }
+
+/* --- HEADER --- */
+header { background-color: rgba(18, 18, 18, 0.9); padding: 20px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 30px; }
+.logo { font-family: var(--font-logo); font-size: 28px; font-weight: bold; color: white; letter-spacing: 1px; }
+.logo-accent { color: var(--accent); }
+nav ul { display: flex; gap: 30px; }
+nav a { font-size: 14px; font-weight: 600; text-transform: uppercase; color: var(--text-sub); }
+nav a:hover, nav a.active { color: white; }
+
+/* --- MAIN CONTENTS --- */
+main { max-width: 1200px; margin: 0 auto; padding: 60px 30px; }
+.browse-section { text-align: center; }
+.section-title { font-size: 48px; font-weight: 700; color: white; margin-bottom: 10px; }
+.section-desc { font-size: 18px; color: var(--text-sub); max-width: 700px; margin: 0 auto 50px; }
+.gradient-text { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+/* --- FILTERS --- */
+.filter-container { background-color: var(--bg-card); border-radius: 12px; padding: 30px; margin-bottom: 40px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+#search-bar { width: 100%; padding: 15px; background-color: #2a2a2a; border: 1px solid #333; border-radius: 8px; color: white; font-size: 16px; margin-bottom: 25px; }
+.filter-controls { display: flex; gap: 30px; justify-content: space-between; flex-wrap: wrap; }
+.filter-group { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.filter-group label { font-size: 12px; color: #777; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+.btn-group { display: flex; gap: 10px; }
+.filter-btn { padding: 10px 20px; background-color: #2a2a2a; border: none; border-radius: 6px; color: var(--text-sub); font-size: 14px; cursor: pointer; transition: background 0.3s, color 0.3s; }
+.filter-btn:hover { background-color: #3a3a3a; color: white; }
+.filter-btn.active { background-color: var(--accent); color: white; }
+
+.showing-count { text-align: left; color: #777; margin-bottom: 20px; padding-left: 5px; }
+
+/* --- GRID & CARDS --- */
+.packs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; }
+.pack-card { background-color: var(--bg-card); border-radius: 12px; overflow: hidden; position: relative; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; height: 100%; display: flex; flex-direction: column; }
+.pack-card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); }
+.pack-poster-container { position: relative; width: 100%; height: 0; padding-bottom: 150%; /* Tỉ lệ poster phim chuẩn */ overflow: hidden; }
+.pack-poster { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+.pack-info { padding: 20px; text-align: left; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+.pack-title { font-size: 18px; font-weight: 600; color: white; margin-bottom: 8px; }
+.pack-meta { font-size: 14px; color: var(--text-sub); }
+
+/* --- MODAL POPUP (Phản chiếu image_0.png) --- */
+.modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.85); overflow-y: auto; justify-content: center; align-items: center; }
+.modal-content { background-color: var(--bg-modal); width: 100%; max-width: 550px; border-radius: 15px; position: relative; color: #f0f0f0; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6); margin: 20px; }
+.close-modal { position: absolute; top: 15px; right: 20px; color: #777; font-size: 30px; cursor: pointer; font-weight: bold; }
+.close-modal:hover { color: white; }
+.modal-body-content { padding: 30px; }
+.modal-body-content h3 { font-size: 26px; font-weight: 700; color: white; margin-bottom: 20px; }
+#modal-poster { width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px; }
+.tagline { font-style: italic; color: var(--text-sub); margin-bottom: 10px; }
+#modal-description { font-size: 15px; color: #ddd; margin-bottom: 25px; }
+
+.modal-details { margin-bottom: 30px; background: #1a1a1a; padding: 20px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.03); }
+.detail-item { display: flex; margin-bottom: 12px; font-size: 14px; }
+.detail-item:last-child { margin-bottom: 0; }
+.detail-item label { font-weight: bold; color: #999; width: 100px; }
+.detail-item span { color: white; flex-grow: 1; }
+
+.modal-actions { display: flex; gap: 15px; flex-wrap: wrap; }
+.modal-btn { padding: 12px 24px; border: none; border-radius: 8px; font-size: 15px; font-weight: bold; cursor: pointer; transition: opacity 0.3s; flex-grow: 1; }
+.modal-btn:hover { opacity: 0.8; }
+.main-action { background: var(--gradient); color: #121212; }
+.secondary-action { background-color: #2a2a2a; color: white; }
+
+/* --- FOOTER --- */
+footer { background-color: var(--bg-card); padding: 60px 0 20px; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: center; }
+.footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; text-align: left; padding: 0 30px 40px; }
+.logo-col p { margin-top: 10px; color: var(--text-sub); }
+.footer-col h4 { color: white; text-transform: uppercase; margin-bottom: 20px; }
+.footer-col ul li { margin-bottom: 10px; }
+.footer-col ul a { color: var(--text-sub); font-size: 14px; }
+.copyright { font-size: 12px; color: #555; border-top: 1px solid #333; padding-top: 20px; }
