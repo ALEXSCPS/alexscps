@@ -13,7 +13,7 @@ const packsData = [
         description: "After a shocking first date, Bea and Ben’s fiery attraction turns ice cold – until they find themselves unexpectedly reunited at a destination wedding in Australia. (Dữ liệu mẫu cho mô tả)",
         release: "1 thg 4, 2026 (Dữ liệu mẫu)",
         runtime: "1h 43m (Dữ liệu mẫu)",
-        genres: "Romance, Comedy (Dữ liệu mẫu)"
+        genres: "Miss Universe, Miss Universe Philippines 2025 (Dữ liệu mẫu)"
         megalink: https://mega.nz/folder/cQkxAbaS#D4VXwo-I1R_Rvhq6vEjO9A
     },
     {
