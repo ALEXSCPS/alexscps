@@ -3,17 +3,18 @@
 const packsData = [
     {
         id: 1,
-        title: "WE OWN THIS CITY SCENEPACK (ALEX)",
+        title: "CHELSEA FERNANDEZ (ALEX)",
         meta: "Alex | TV Show",
         creator: "alexscps",
         type: "tv",
-        poster: "link_anh_cua_ban.jpg", // Tải ảnh 'we_own_poster.jpg' lên GitHub rồi sửa tên file ở đây
+        poster: "scp_1_poster.jpg", // Tải ảnh 'we_own_poster.jpg' lên GitHub rồi sửa tên file ở đây
         // Chi tiết cho modal (giống image_0.png)
         tagline: "The story of Baltimore's corrupt Gun Trace Task Force.",
         description: "After a shocking first date, Bea and Ben’s fiery attraction turns ice cold – until they find themselves unexpectedly reunited at a destination wedding in Australia. (Dữ liệu mẫu cho mô tả)",
-        release: "21 thg 12, 2023 (Dữ liệu mẫu)",
+        release: "1 thg 4, 2026 (Dữ liệu mẫu)",
         runtime: "1h 43m (Dữ liệu mẫu)",
         genres: "Romance, Comedy (Dữ liệu mẫu)"
+        megalink: https://mega.nz/folder/cQkxAbaS#D4VXwo-I1R_Rvhq6vEjO9A
     },
     {
         id: 2,
