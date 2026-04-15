@@ -6,6 +6,14 @@ const downloadQueue = [
         link: "https://mega.nz/folder/cQkxAbaS#D4VXwo-I1R_Rvhq6vEjO9A"
     }
 ];
+const downloadQueue = [ 
+    } 
+        filename: "llina nabsuk ",
+        status: " pending",
+        link: " https://mega.nz/folder/O95gCRKD#kzH6VX6dr5b3hAEf_KbPSg "
+        picture: k_00000
+}
+];
 
 // Hàm hiển thị thông tin tải về ra Console
 function displayDownloadInfo(queue) {
